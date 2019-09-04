@@ -1,0 +1,29 @@
+﻿@using iziWSH_V2.Models
+@model List<Venda>
+
+
+@{
+    ViewBag.Title = "AprovarPagamento";
+}
+
+<h2 align="center">Aprovar Pagamento</h2>
+
+@foreach (Venda vendaPendente in Model)
+{
+    using (Html.BeginForm())
+    {
+    <div align="center" style="border:groove;border-radius:5px;">
+        <b>Email: </b> @vendaPendente.Email<br />
+        <b>Nome Cartão: </b> @vendaPendente.NomeCartao<br />
+        <b>Valor: </b>  @vendaPendente.Valor<br />
+        <b>Cartão: </b> @vendaPendente.NumeroCartao<br />
+        <b>Codigo de Segurança: </b> @vendaPendente.CodSeguranca<br />
+        <b>Validade: </b> @vendaPendente.Validade<br />
+        @Html.ActionLink("Rejeitar", "RejeitarPagamentoCartao", "Cliente",
+                              new { id = vendaPendente.VendaId }, new { @class = "btn btn-outline-danger" })
+        @Html.ActionLink("Aprovar", "AprovarPagamentoCartao", "Cliente",
+                              new { id = vendaPendente.VendaId }, new { @class = "btn btn-outline-success" })
+        <br />
+    </div>
+    }
+}

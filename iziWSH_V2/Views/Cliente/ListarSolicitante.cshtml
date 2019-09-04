@@ -1,0 +1,38 @@
+﻿@using iziWSH_V2.Models
+@model List<Cliente>
+
+@{
+    ViewBag.Title = "ListarSolicitante";
+}
+
+    <div style="margin-top:30px" style="background-color:white; border-radius:1%;">
+        <table class="table table-hover table-striped" style="background-color:white; border-radius:1%;">
+            <tr>
+                <th>Nome</th>
+                <th>Data de Nascimento</th>
+                <th>Email</th>
+                <th>Cep</th>
+                <th>Rua</th>
+                <th>Acão</th>
+                <th>Acão</th>
+            </tr>
+            @foreach (Cliente clienteCadastrado in Model)
+            {
+                <tr>
+                    <td>@clienteCadastrado.Nome</td>
+                    <td>@clienteCadastrado.Nascimento.Date</td>
+                    <td>@clienteCadastrado.Email</td>
+                    <td>@clienteCadastrado.Cep</td>
+                    <td>@clienteCadastrado.Logradouro</td>
+                    <td>
+                        @Html.ActionLink("Remover", "RemoverProduto", "Produto",
+                            new { id = clienteCadastrado.Id }, null)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Alterar", "AlterarProduto", "Produto",
+                            new { id = clienteCadastrado.Id }, null)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>

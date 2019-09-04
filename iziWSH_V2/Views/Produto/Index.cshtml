@@ -1,0 +1,54 @@
+﻿@using iziWSH_V2.Models
+@model List<Produto>
+
+@{
+    DateTime data = ViewBag.Data;
+}
+
+    <h2 style="margin-bottom:30px">Gerenciamento de Produtos</h2>
+    @*<h2> @ViewBag.Usuario </h2>*@
+
+    @*Linguagem Razor*@
+    @*Link do HTML*@
+    @*<a href="#">Texto do Link</a>*@
+
+    @Html.ActionLink("Cadastrar Produto", "CadastrarProduto", "Produto")
+
+    <div style="margin-top:30px">
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Produto Utilizado</th>
+                <th></th>
+                <th></th>
+            </tr>
+            @foreach (Produto produtoCadastrado in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/Imagens/@produtoCadastrado.Imagem"
+                             alt="@produtoCadastrado.Descricao"
+                             style="width:100px" />
+                    </td>
+                    <td>@produtoCadastrado.Nome</td>
+                    <td>@produtoCadastrado.Descricao</td>
+                    <td>@produtoCadastrado.Preco</td>
+                    <td>@produtoCadastrado.ProdutoUtilizado</td>
+                    <td>
+                        @Html.ActionLink("Remover", "RemoverProduto", "Produto",
+                            new { id = produtoCadastrado.ProdutoId }, null)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Alterar", "AlterarProduto", "Produto",
+                            new { id = produtoCadastrado.ProdutoId }, null)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <p>
+        Dados atualizados às: <b> @data </b>
+    </p>

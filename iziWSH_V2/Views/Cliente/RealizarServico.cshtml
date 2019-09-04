@@ -1,0 +1,40 @@
+﻿@using iziWSH_V2.Models
+@model List<Venda>
+@using iziWSH_V2.DAL
+
+@{
+        ViewBag.Title = "Realizar Servico";
+      
+}
+
+<div style="margin-top:30px" style="background-color:white; border-radius:1%;">
+    <table class="table table-hover table-striped" style="background-color:white; border-radius:1%;">
+        <tr>
+            <th>Cep</th>
+            <th>Cidade</th>
+            <th>Nome da Rua</th>
+            <th>Numero da rua</th>
+            <th>Marca Carro</th>
+            <th>Placa Carro</th>
+            <th>Acão</th>
+        </tr>
+
+        @foreach (Venda ItemVenda in Model)
+        {
+            
+            <tr>
+                
+                <td>@ItemVenda.Cep</td>
+                <td>@ItemVenda.Localidade</td>
+                <td>@ItemVenda.Logradouro</td>
+                <td>@ItemVenda.NumeroRua</td>
+                <td>@ItemVenda.MarcaCarro</td>
+                <td>@ItemVenda.PlacaCarro</td>
+                <td>
+                    @Html.ActionLink("Ver Detalhes", "Detalhes", "Produto",
+                            new { CarrinhoId = ItemVenda.CarrinhoId }, null)
+                </td>
+            </tr>
+        }
+    </table>
+</div>

@@ -1,0 +1,28 @@
+﻿@using iziWSH_V2.Models
+@model List<Produto>
+
+@{
+
+}
+
+    @using (Html.BeginForm("ComprarServico", "Home", FormMethod.Post))
+    {
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6"
+                     style="text-align:center;margin-bottom:30px">
+                    <img class="img-thumbnail" src="~/Imagens/@item.Imagem"
+                         alt="@item.Descricao" style="width:500px;height:300px;
+                    margin-bottom:15px" /><br />
+
+                    @Html.ActionLink(item.Nome, "Detalhes", "Home")<br />
+                    <b>Preço: </b> @item.Preco.ToString("C2")<br />
+
+                    @Html.ActionLink("Adicionar", "AdicionarAoCarrinho",
+                 "Home", new { id = item.ProdutoId },
+                 new { @class = "btn btn-primary" })
+                </div>
+            }
+        </div>
+    }

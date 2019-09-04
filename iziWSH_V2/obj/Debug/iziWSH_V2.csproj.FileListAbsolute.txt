@@ -1,0 +1,138 @@
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\ApplicationInsights.config
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\csc.exe
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\System.Collections.Immutable.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\vbc.exe
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\VBCSCompiler.exe
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\roslyn\VBCSCompiler.exe.config
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\iziWSH_V2.dll.config
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\iziWSH_V2.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\iziWSH_V2.pdb
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\EntityFramework.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\EntityFramework.SqlServer.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.Web.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.WindowsServer.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.ApplicationInsights.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.Web.Infrastructure.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Helpers.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Mvc.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Razor.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.Deployment.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.Razor.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\EntityFramework.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\EntityFramework.SqlServer.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.Web.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.WindowsServer.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.ApplicationInsights.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Razor.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.Deployment.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.Razor.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Helpers.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\bin\System.Web.Mvc.xml
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.csprojResolveAssemblyReference.cache
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.dll
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.pdb
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.v1.resources
+c:\users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.csproj.GenerateResource.Cache
+C:\Users\rick-\documents\visual studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.v5.resources
+C:\Users\rick-\Documents\Visual Studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.v11.resources
+C:\Users\rick-\Documents\Visual Studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.FuncionaPeloAmorDeDeusKKKK.resources
+C:\Users\rick-\Documents\Visual Studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations._12323132.resources
+C:\Users\rick-\Documents\Visual Studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.iuh.resources
+C:\Users\rick-\Documents\Visual Studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.validaemail.resources
+C:\Users\rick-\Documents\Visual Studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.cpfValidation.resources
+C:\Users\rick-\Documents\Visual Studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.nivelCliente.resources
+C:\Users\rick-\Documents\Visual Studio 2015\Projects\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.ExcluiRegexCpf.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\ApplicationInsights.config
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\csc.exe
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\vbc.exe
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\VBCSCompiler.exe
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\iziWSH_V2.dll.config
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\iziWSH_V2.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\iziWSH_V2.pdb
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\EntityFramework.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\EntityFramework.SqlServer.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.Web.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.ApplicationInsights.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Helpers.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Mvc.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Razor.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.Deployment.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.Razor.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\EntityFramework.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\EntityFramework.SqlServer.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.Web.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.ApplicationInsights.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Razor.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.Deployment.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Webpages.Razor.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Helpers.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\System.Web.Mvc.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.csprojResolveAssemblyReference.cache
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.csproj.GenerateResource.Cache
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.pdb
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.apagarRequiredImagem.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.teste.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.incluiRG.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.v3.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Newtonsoft.Json.dll
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\bin\Newtonsoft.Json.xml
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.cep.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.teste1.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.DataHora.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.teste2.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.dsadasdsad.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.BuscarrrCep.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.venda.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.attMeuServico.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.tesarera.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.CartaoCredito.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.Valor.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.dlasuiidbasn.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.valorDouble.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.Alteracoes.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.SAAAllldo.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.Tasdasd.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.campoProdutoUtilizado.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.sadoasjlddasj.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.aliduashidusah.resources
+C:\Users\rick-\Desktop\iziWSH_V2\iziWSH_V2\obj\Debug\iziWSH_V2.Migrations.adasd.resources

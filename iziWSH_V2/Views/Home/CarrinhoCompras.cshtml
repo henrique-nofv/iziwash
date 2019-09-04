@@ -1,0 +1,43 @@
+﻿@using iziWSH_V2.Models
+
+@{
+    double total = ViewBag.Total;
+}
+
+<h2>Carrinho de Compras</h2>
+
+<table class="table table-hover table-striped" style="margin-bottom:30px">
+    <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Preço</th>
+        <th>Subtotal</th>
+        <th></th>
+    </tr>
+
+    @foreach (ItemVenda item in Model)
+    {
+        <tr>
+            <td>@item.Produto.Nome</td>
+            
+            <td style="box-sizing: border-box">
+                @item.Quantidade
+            </td>
+            <td>@item.Preco.ToString("C2")</td>
+            @{
+                double subtotal = item.Quantidade * item.Preco;
+            }
+            <td>@subtotal.ToString("C2")</td>
+            <td>@Html.ActionLink("Remover", "RemoverItem", "Home", new { id = item.ItemVendaId }, null)</td>
+        </tr>
+                }
+</table>
+
+<div style="box-sizing:border-box;-moz-box-sizing: border-box;">
+    <div class="card text-white bg-success mb-3" style="max-width: 20%;float:left;">
+        <div class="card-header"><b>Total: </b> @total.ToString("C2")</div>
+    </div>
+    <div style="text-align:right">
+        @Html.ActionLink("Finalizar compra", "FinalizarCompra", "Home", null, new { @class = "btn btn-danger" })
+    </div>
+</div>

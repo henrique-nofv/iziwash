@@ -1,0 +1,42 @@
+﻿
+@using iziWSH_V2.Models
+@model List<Venda>
+
+@{
+    ViewBag.Title = "Meus Trabalhos";
+}
+
+
+
+
+<div align="center">
+    <h2>Trabalhos em Aberto</h2>
+
+    @foreach (var item in Model)
+            {
+        <div class="col-sm-6"
+             style="text-align:center;margin-bottom:30px;border:dashed;border-radius:5px;">
+            {
+                <b>Id Serviço: </b> @item.CarrinhoId<br />
+
+                if (item.cliente != null)
+                {
+                    <b>Prestador: </b> @item.cliente.Nome<br />
+                }
+                <b>Servico: </b> @item.NomeServico<br />
+                <b>Cep: </b> @item.Cep<br />
+                <b>Carro: </b> @item.MarcaCarro<br />
+                <b>Placa: </b> @item.PlacaCarro<br />
+                <b>Data: </b> @item.Data.ToShortDateString()<br />
+                <b>Horario: </b> @item.Hora<br />
+                <b>Status: </b> @item.StatusVenda<br />
+
+                @Html.ActionLink("Cancelar", "CancelarServico", "Cliente",
+                                            new { id = item.VendaId }, new { @class = "btn btn-outline-danger" })
+                @Html.ActionLink("Concluido", "ConcluirServico", "Cliente",
+                                            new { id = item.VendaId }, new { @class = "btn btn-outline-success" })
+            }
+            </div>
+            
+            }
+        </div>

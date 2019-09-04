@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Detalhes";
+
+}
+
+
+<div align="center">
+    <h2>Detalhes</h2>
+    <img class="img-thumbnail" src="~/Imagens/@ViewData["ImagemProduto"]"
+         alt="@ViewData["NomeProduto"]" style="width:500px;height:300px;
+                    margin-bottom:15px" /><br /><br />
+    <b>Cliente: </b> @ViewData["NomeCliente"]<br /><br />
+    <b>Status: </b>@ViewData["StatusServico"]<br /><br />
+    <b>Produto: </b> @ViewData["NomeProduto"]<br /><br />
+    <b>Preço: </b> R$ @ViewData["Preco"],00<br /><br />
+    <b>Cep: </b>@ViewData["Cep"] <br /><br />
+    <b>Rua: </b>@ViewData["Rua"]<br /><br />
+    <b>Numero: </b>@ViewData["Numero"]<br /><br />
+    <b>Placa: </b>@ViewData["PlacaCarro"]<br /><br />
+    <b>Carro: </b>@ViewData["MarcaCarro"]<br /><br />
+    @Html.ActionLink("Realizar Servico", "RealizaServico", "Cliente",
+                            new { id = ViewData["IdVenda"] }, new { @class = "btn btn-outline-success" })
+</div>

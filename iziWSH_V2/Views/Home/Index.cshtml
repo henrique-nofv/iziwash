@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Inicio";
+    Layout = "~/Views/Shared/LayoutIndex.cshtml";
+}
+<style>
+    .parallax {
+        /* The image used */
+        background-image: url("/Content/cleaning-1837332_1920.jpg");
+        /* Set a specific height */
+        height: 350px;
+        width: 100%;
+        overflow: hidden;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<!-- Container element -->
+
+<div class="parallax">
+    @if (Request.Cookies["Nivel"].Value == "0")
+    {
+        <div align="center" style="margin-top:60px;">
+            @Html.ActionLink("Cadastre-se", "CadastrarSolicitante", "Cliente", null,
+                  new
+                  {
+                      @class = "btn btn-success btn-large",
+                      @style = "height:55px; width:330px; font-size:32px;"
+                  })
+        </div>
+    }
+    else
+    {
+
+        <div align="center" style="margin-top:60px;">
+            @Html.ActionLink("Tornar-se Colaborador", "CadastrarPrestador", "Cliente", null,
+    new
+    {
+        email = Request.Cookies["Email"].Value,
+        @class = "btn btn-success btn-large",
+        @style = "height:55px; width:350px; font-size:32px;"
+    })
+        </div>
+    }
+    <div align="center" style="margin-top:3%;" class="row">
+
+        <div class="col-sm-4">
+            <div class="card text-white bg-primary mb-3" style="max-width: 20rem; height:180px;">
+                <div class="card-header">Economize Tempo</div>
+                <div class="card-body">
+
+                    <p class="card-text">Basta você solicitar uma lavagem, que o nosso fornecedor irá até onde você desejar. Tudo para manter seu carro impecável.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card bg-light mb-3" style="max-width: 20rem; height:180px;">
+                <div class="card-header">Ganhe Dinheiro</div>
+                <div class="card-body">
+                    <p class="card-text">Está com tempo livre e deseja ganhar aquela grana extra? Se torne um colaborador.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card bg-secondary mb-3" style="max-width: 20rem; height:180px;">
+                <div class="card-header">Rápido e Fácil</div>
+                <div class="card-body">
+                    <p class="card-text">Ficou com curiosidade? Cadastre-se e comece a utilizar agora mesmo! Apenas clica no botão acima.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+
+
+    </div>
+
+</div>
+
+<div class="container"
+     style="margin-top: 30px; margin-bottom: 30px">
+    <b>Como usar o iziWSH ?</b>
+    <p> Realize seu cadastro na pagina principal.</p>
+
+    <p> Após realizar seu cadastro, insira o endereço do local em qual deseja ter o serviço.</p>
+
+    <p>Clique em Solicitar Serviço. Pode ser necessário confirmar o local da lavagem.</p>
+
+    <p>Aguarde até que um fornecedor aceite a solicitação.</p>
+
+    <p>Quando a solicitação for aceita, você verá a localização do seu fornecedor no mapa, com previsão de chegada ao local da lavagem.</p>
+
+    <p>A iziWSH avisará quando o fornecedor estiver perto do local da lavagem.</p>
+</div>

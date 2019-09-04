@@ -1,0 +1,8 @@
+﻿@{
+    if (Request.Cookies["Email"] == null)
+    {
+        Response.Cookies["Email"].Value = "";
+        Response.Cookies["Nivel"].Value = "0";
+    }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}

@@ -1,0 +1,18 @@
+﻿@model iziWSH_V2.Models.Cliente
+
+@{
+    ViewBag.Title = "Saldo";
+
+}
+
+<h2>Saldo</h2>
+
+    <b>Você possui um saldo de R$ @Html.TextBoxFor(model => model.Saldo,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Nome do produto",
+                            @readonly = "readonly"
+                        }) para retirar entre contato com o suporte via e-mail: pagamento@iziwsh.com.</b>
+
+

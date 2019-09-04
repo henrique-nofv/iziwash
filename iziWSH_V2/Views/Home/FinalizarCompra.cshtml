@@ -1,0 +1,248 @@
+﻿@using iziWSH_V2.Models
+@using iziWSH_V2.DAL
+@model Venda
+
+@{
+    ViewBag.Title = "FinalizarCompra";
+    List<ItemVenda> itens = ViewBag.Itens;
+}
+
+<h3>Resumo da Compra</h3>
+<div style="box-sizing:border-box;-moz-box-sizing: border-box;">
+    <div class="jumbotron" style="float:left;width:50%;margin-right:10px">
+        @foreach (ItemVenda item in itens)
+        {
+           
+            <p class="lead"><b>@item.Produto.Nome</b></p>
+            <p>@item.Preco.ToString("C2") x @item.Quantidade</p>
+            <hr class="my-4" />
+            double subtotal = item.Preco * item.Quantidade;
+            <b>Subtotal: @subtotal.ToString("C2")</b>
+                
+                Response.Cookies["Valor"].Value = Convert.ToString(item.Preco);
+            
+            <hr class="my-4" style="margin-bottom:10px" />
+        }
+        <p class="lead"><b>Total: @ItemVendaDAO.RetornarTotalCarrinho().ToString("C2")</b></p>
+    </div>
+    <div>
+        @using (Html.BeginForm("FinalizarCompra", "Home",
+                        FormMethod.Post,
+                        new
+                        {
+                            @class = "form-horizontal"
+                        }))
+        {
+            <fieldset>
+                <legend>Informe os Dados</legend>
+                <div class="form-group">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Cep, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Cep, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Cep, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit"
+                               value="Buscar CEP"
+                               class="btn btn-default"
+                               formaction="BuscarCep"
+                               formmethod="post" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Logradouro, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Logradouro, new { htmlAttributes = new { @class = "form-control", @readonly = "" } })
+                        @Html.ValidationMessageFor(model => model.Logradouro, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Uf, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Uf, new { htmlAttributes = new { @class = "form-control", @readonly = "" } })
+                        @Html.ValidationMessageFor(model => model.Uf, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Localidade, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Localidade, new { htmlAttributes = new { @class = "form-control", @readonly = "" } })
+                        @Html.ValidationMessageFor(model => model.Localidade, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NumeroRua,
+                    new { @class = "control-label col-sm-6" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(model => model.NumeroRua,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Numero da rua"
+                        })
+                        @Html.ValidationMessageFor(model => model.NumeroRua, null,
+                        new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MarcaCarro,
+                    new { @class = "control-label col-sm-2" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(model => model.MarcaCarro,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Marca do seu carro"
+                        })
+                        @Html.ValidationMessageFor(model => model.MarcaCarro, null,
+                        new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ModeloCarro,
+                    new { @class = "control-label col-sm-2" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(model => model.ModeloCarro,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Modelo do seu carro"
+                        })
+                        @Html.ValidationMessageFor(model => model.ModeloCarro, null,
+                        new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PlacaCarro,
+                    new { @class = "control-label col-sm-2" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(model => model.PlacaCarro,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Placa do seu carro"
+                        })
+                        @Html.ValidationMessageFor(model => model.PlacaCarro, null,
+                        new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Data,
+                    new { @class = "control-label col-sm-2" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(model => model.Data,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Data para realizar serviço"
+                        })
+                        @Html.ValidationMessageFor(model => model.Data, null,
+                        new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Hora,
+                    new { @class = "control-label col-sm-2" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(model => model.Hora,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Horario para realizar serviço"
+                        })
+                        @Html.ValidationMessageFor(model => model.Hora, null,
+                        new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <hr />
+                    <h3>Dados Pagamento</h3>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.NumeroCartao,
+                    new { @class = "control-label col-sm-6" })
+                        <div class="col-sm-10">
+                            @Html.TextBoxFor(model => model.NumeroCartao,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "N° Cartão"
+                        })
+                            @Html.ValidationMessageFor(model => model.NumeroCartao, null,
+                        new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.NomeCartao,
+                    new { @class = "control-label col-sm-6" })
+                        <div class="col-sm-10">
+                            @Html.TextBoxFor(model => model.NomeCartao,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Nome impresso no cartão"
+                        })
+                            @Html.ValidationMessageFor(model => model.NomeCartao, null,
+                        new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Validade,
+                    new { @class = "control-label col-sm-6" })
+                        <div class="col-sm-10">
+                            @Html.TextBoxFor(model => model.Validade,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Validade cartão. Exemplo: 12/18"
+                        })
+                            @Html.ValidationMessageFor(model => model.Validade, null,
+                        new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CodSeguranca,
+                    new { @class = "control-label col-sm-6" })
+                        <div class="col-sm-10">
+                            @Html.TextBoxFor(model => model.CodSeguranca,
+                        new
+                        {
+                            @class = "form-control",
+                            @placeholder = "Código de segurança"
+                        })
+                            @Html.ValidationMessageFor(model => model.CodSeguranca, null,
+                        new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    
+                <div class="form-group">
+
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="submit" value="Comprar"
+                               class="btn btn-primary">
+                    </div>
+                    
+
+                </div>
+            </fieldset>
+        }
+    </div>
+</div>
